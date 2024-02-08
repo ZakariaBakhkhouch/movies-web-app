@@ -1,0 +1,95 @@
+<h1> Movie Title </h1>
+<br>
+
+<div class="row">
+    <div class="col-md-6">
+        <iframe 
+        width="540" 
+        height="360" 
+        src="https://www.youtube.com/embed/ShVo-llHwxQ" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-6">
+        <p class="lead">This is going to be a placeholder for the movie plot</p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Stars</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">dd</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Directors</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">dd</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Genres</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">dd</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+<br>
+
+<div class="row">
+    <h1>Actors</h1>
+    <br>
+
+    <div class="col-md-12 text-center">
+        <app-details-actors></app-details-actors>
+    </div>
+
+    <div class="text-center">
+        <a class="btn btn-warning" [routerLink]="['/details/actors/'+movieId]">View more</a>
+    </div>
+</div>
+<hr>
+<br>
+
+<div class="row">
+    <h1>Reviews</h1>
+    <br>
+
+    <div class="col-md-12">
+        <app-details-reviews></app-details-reviews>
+    </div>
+
+    <div class="text-center">
+        <a class="btn btn-warning" [routerLink]="['/details/reviews/'+movieId]">View more</a>
+    </div>
+</div>
+<hr>
+<br>
+
+<div class="row">
+    <h1>Similar Movies</h1>
+    <br>
+
+    <div class="col-md-12 text-center">
+        <app-details-movies></app-details-movies>
+    </div>
+
+    <div class="text-center">
+        <a class="btn btn-warning" [routerLink]="['/details/movies/'+movieId]">View more</a>
+    </div>
+</div>
+<br>
+
+<!-- START: Nested Components load -->
+<!-- <router-outlet></router-outlet> -->
+<!-- END: Nested Components load -->
