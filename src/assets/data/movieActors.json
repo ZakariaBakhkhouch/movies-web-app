@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Actor 1",
+        "role": "Role 1",
+        "imageURL": "../../assets/images/download.jpg"
+    },
+    {
+        "name": "Actor 2",
+        "role": "Role 2",
+        "imageURL": "../../assets/images/download.jpg"
+    },
+    {
+        "name": "Actor 3",
+        "role": "Role 3",
+        "imageURL": "../../assets/images/download.jpg"
+    }
+]

@@ -1,4 +1,4 @@
-<h1>Results for .....</h1>
+<h1 [ngClass]="searchTitle" [ngStyle]="currentStyles">Results for {{movieTitle}}</h1>
 <hr>
 
 <table class="table table-striped">
@@ -12,13 +12,13 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr *ngFor="let search of searchResult">
         <th scope="row">1</th>
         <td>
-            <img src="../../assets/images/avengers.jpg" width="100">
+            <img [src]="search.imageUrl" width="100">
         </td>
-        <td>Avengers</td>
-        <td>Description</td>
+        <td>{{search.title}}</td>
+        <td>{{search.description}}</td>
         <td>
             <a class="btn btn-warning" 
               data-bs-toggle="modal" 
@@ -26,7 +26,7 @@
               <i class="bi bi-film"></i> Trailer
             </a>
             |
-            <a class="btn btn-primary" routerLink="/details"> 
+            <a class="btn btn-primary" [routerLink]="search.detailsLink"> 
               <i class="bi bi-eye"></i> Details
             </a>
         </td>

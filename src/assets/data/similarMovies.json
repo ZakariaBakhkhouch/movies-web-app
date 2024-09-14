@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Movie 1",
+        "rate": 5,
+        "imageURL": "../../assets/images/avengers.jpg" 
+    },
+    {
+        "title": "Movie 2",
+        "rate": 5.5,
+        "imageURL": "../../assets/images/avengers.jpg" 
+    },
+    {
+        "title": "Movie 3",
+        "rate": 10,
+        "imageURL": "../../assets/images/avengers.jpg" 
+    }
+]
