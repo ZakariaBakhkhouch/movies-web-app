@@ -1,1 +1,40 @@
-<p>feedback works!</p>
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <form #feedbackForm="ngForm" (ngSubmit)="SubmitFeedback()">
+                <legend>Let us know what do you think</legend>
+                <hr>
+        
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Email adress" name="email" [(ngModel)]="feedback.email" required email/>
+                </div>
+                <div class="mb-3">
+                    <label for="phoneNumber" class="form-label">Phone number</label>
+                    <input type="text" id="email" class="form-control" placeholder="Phone number" name="phoneNumber" [(ngModel)]="feedback.phoneNumber" required pattern="[0-9\-]"/>
+                </div>
+                <div class="mb-3">
+                    <label for="rateExperience" class="form-label">Rate experience</label>
+                    <input type="range" min="0" max="10" step="1" id="rateExperience" class="form-range" name="rate" [(ngModel)]="feedback.rate" required/>
+                    <div> your feedback rate : {{feedback.rate}}</div>
+                </div>
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" id="title" class="form-control" placeholder="Title" name="title" [(ngModel)]="feedback.title" required pattern="[A-Za-z0-9\s]"/>
+                </div>
+                <div class="mb-3">
+                    <label for="feedback" class="form-label">Feedback</label>
+                    <input type="text" id="feedback" class="form-control" placeholder="Your Feedback" name="feedback" [(ngModel)]="feedback.feedback" required pattern="[A-Za-z0-9\s]"/>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary" [disabled]="!feedbackForm.valid">
+                        <i class="bi bi-send"></i>
+                        Send feedback
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</div>

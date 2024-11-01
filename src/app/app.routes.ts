@@ -9,14 +9,14 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { SearchComponent } from './search/search.component';
 
 export const routes: Routes = [
-    { path: '', component: HomeComponent },                              // Wildcard route for a default page 
-    { path: 'home', title: 'Home', component: HomeComponent },           // home page
-    { path: 'feedback', title: 'Feedback', component: FeedbackComponent },                  // feedback page
-    { path: 'search/:movieTitle', component: SearchComponent },          // search page
-    { path: 'details/:id', component: DetailsComponent },                // details page
-    { path: 'details/actors/:id', component: DetailsActorsComponent },   // actors details page
-    { path: 'details/movies/:id', component: DetailsMoviesComponent },   // details page
-    { path: 'details/reviews/:id', component: DetailsReviewsComponent }, // details page
-    { path: '**', component: NotFoundComponent },                        // Wildcard route for a 404 page
+    { path: '', component: HomeComponent },                                // Wildcard route for a default page 
+    { path: 'home', title: 'Home', component: HomeComponent },             // home page
+    { path: 'feedback', title: 'Feedback', component: FeedbackComponent }, // feedback page
+    { path: 'search/:movieTitle', component: SearchComponent },            // search page
+    { path: 'details/:id', component: DetailsComponent },                  // details page
+    { path: 'details/actors/:id', component: DetailsActorsComponent },     // actors details page
+    { path: 'details/movies/:id', component: DetailsMoviesComponent },     // details page
+    { path: 'details/reviews/:id', component: DetailsReviewsComponent },   // details page
+    { path: '**', component: NotFoundComponent },                          // Wildcard route for a 404 page
 
 ];

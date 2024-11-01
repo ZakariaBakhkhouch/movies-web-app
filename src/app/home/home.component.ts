@@ -39,16 +39,32 @@ export class HomeComponent implements OnInit{
 
   GetFanFavoriteMovies() {
     this._httpClient.get<any[]>('assets/data/fanFavoriteMovies.json')
-    .subscribe((data:any[]) => {
-      this.fanFavouritesMovies = data;
-    })
+    .subscribe({
+      next: (data:any[]) => {
+        this.fanFavouritesMovies = data;
+      },
+      error: (error) => {
+        console.log("An error has occured: ",error);
+      },
+      complete: () => {
+        console.log("GetFanFavoriteMovies Request is completed.");
+      }
+    });
   }
   
   GetTopMovies() {
     this._httpClient.get<any[]>('assets/data/topMovies.json')
-    .subscribe((data:any[]) => {
-      this.topMovies = data;
-    })
+    .subscribe({
+      next: (data:any[]) => {
+        this.topMovies = data;
+      },
+      error: (error) => {
+        console.log("An error has occured: ",error);
+      },
+      complete: () => {
+        console.log("GetTopMovies Request is completed.");
+      }
+    });
   }
 }
 
