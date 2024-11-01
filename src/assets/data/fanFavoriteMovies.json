@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Movie title",
+        "actors": "Movie actors",
+        "imageURL": "../../assets/images/avengers.jpg",
+        "rate": 9.5,
+        "year":  "2001",
+        "trohy": 1
+    },
+    {
+        "title": "Movie title",
+        "actors": "Movie actors",
+        "imageURL": "../../assets/images/avengers.jpg",
+        "rate": 9.5,
+        "year":  "2001",
+        "trohy": 1
+    },
+    {
+        "title": "Movie title",
+        "actors": "Movie actors",
+        "imageURL": "../../assets/images/avengers.jpg",
+        "rate": 9.5,
+        "year":  "2001",
+        "trohy": 1
+    }
+]

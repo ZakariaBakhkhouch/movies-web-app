@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Movie title",
+        "actors": "Movie actors",
+        "imageURL": "../../assets/images/avengers.jpg"
+    },
+    {
+        "title": "Movie title",
+        "actors": "Movie actors",
+        "imageURL": "../../assets/images/avengers.jpg"
+    }
+]

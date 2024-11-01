@@ -15,7 +15,10 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive,
+  imports: [CommonModule, 
+    RouterOutlet, 
+    RouterLink, 
+    RouterLinkActive,
     HomeComponent, 
     HeaderComponent, 
     FooterComponent, 
@@ -34,29 +37,29 @@ export class AppComponent {
 
   constructor() { }
 
-  ngOnInit() :void {
-    console.log("ngOnInit called");
-  }
+  // ngOnInit() :void {
+  //   console.log("ngOnInit called");
+  // }
 
-  ngAfterContentInit() :void {
-    console.log("ngAfterContentInit called");
-  }
+  // ngAfterContentInit() :void {
+  //   console.log("ngAfterContentInit called");
+  // }
 
-  ngAfterContentChecked() :void {
-    console.log("ngAfterContentChecked called");
-  }
+  // ngAfterContentChecked() :void {
+  //   console.log("ngAfterContentChecked called");
+  // }
 
-  ngAfterViewInit() :void {
-    console.log("ngAfterViewInit called");
-  }
+  // ngAfterViewInit() :void {
+  //   console.log("ngAfterViewInit called");
+  // }
 
-  ngAfterViewChecked() :void {
-    console.log("ngAfterViewChecked called");
-  }
+  // ngAfterViewChecked() :void {
+  //   console.log("ngAfterViewChecked called");
+  // }
 
-  ngOnChanges()
-  {
-    console.log("ngOnChanges called");
-  }
+  // ngOnChanges()
+  // {
+  //   console.log("ngOnChanges called");
+  // }
 
 }

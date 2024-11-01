@@ -1,48 +1,8 @@
-<figure class="figure">
-    <img src="../../assets/images/download.jpg" 
+<figure class="figure" *ngFor="let actor of movieActors">
+    <img [src]="actor.imageURL" 
     class="figure-img img-fluid rounded img-thumbnail" 
     style="max-width: 120px;"
     alt="...">
-    <figcaption class="figure-caption">Actoe 1</figcaption>
-    <figcaption class="figure-caption">Role 1</figcaption>
-</figure>
-<figure class="figure">
-    <img src="../../assets/images/download.jpg" 
-    class="figure-img img-fluid rounded img-thumbnail" 
-    style="max-width: 120px;"
-    alt="...">
-    <figcaption class="figure-caption">Actoe 1</figcaption>
-    <figcaption class="figure-caption">Role 1</figcaption>
-</figure>
-<figure class="figure">
-    <img src="../../assets/images/download.jpg" 
-    class="figure-img img-fluid rounded img-thumbnail" 
-    style="max-width: 120px;"
-    alt="...">
-    <figcaption class="figure-caption">Actoe 1</figcaption>
-    <figcaption class="figure-caption">Role 1</figcaption>
-</figure>
-<figure class="figure">
-    <img src="../../assets/images/download.jpg" 
-    class="figure-img img-fluid rounded img-thumbnail" 
-    style="max-width: 120px;"
-    alt="...">
-    <figcaption class="figure-caption">Actoe 1</figcaption>
-    <figcaption class="figure-caption">Role 1</figcaption>
-</figure>
-<figure class="figure">
-    <img src="../../assets/images/download.jpg" 
-    class="figure-img img-fluid rounded img-thumbnail" 
-    style="max-width: 120px;"
-    alt="...">
-    <figcaption class="figure-caption">Actoe 1</figcaption>
-    <figcaption class="figure-caption">Role 1</figcaption>
-</figure>
-<figure class="figure">
-    <img src="../../assets/images/download.jpg" 
-    class="figure-img img-fluid rounded img-thumbnail" 
-    style="max-width: 120px;"
-    alt="...">
-    <figcaption class="figure-caption">Actoe 1</figcaption>
-    <figcaption class="figure-caption">Role 1</figcaption>
+    <figcaption class="figure-caption">{{actor.name}}</figcaption>
+    <figcaption class="figure-caption">{{actor.role}}</figcaption>
 </figure>
